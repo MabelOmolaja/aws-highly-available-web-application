@@ -1,6 +1,7 @@
 # Highly Available Web Application on AWS
 
 ## Project Overview
+<img width="1280" height="800" alt="webapp" src="https://github.com/user-attachments/assets/11d1a830-f972-43fd-b730-5edfd0ba6506" />
 
 This project demonstrates the deployment of a **highly available and scalable web application on AWS** using core cloud services such as EC2, Auto Scaling Groups, and an Application Load Balancer (ALB).
 
@@ -32,7 +33,7 @@ The architecture ensures that the application remains available even if individu
 
 ---
 
-## ☁️ AWS Services Used
+## AWS Services Used
 
 | Service | Purpose |
 |--------|---------|
@@ -47,13 +48,13 @@ The architecture ensures that the application remains available even if individu
 
 ---
 
-## ⚙️ Deployment Steps
+## Deployment Steps
 
 ### 1. VPC Setup
-- Created a custom VPC (10.0.0.0/16)
-- Configured 2 public subnets across 2 Availability Zones
-- Attached Internet Gateway
-- Configured route tables for internet access
+- I created a custom VPC (10.0.0.0/16)
+- I configured 2 public subnets across 2 Availability Zones
+- I attached the Internet Gateway
+- I configured route tables for internet access
 
 ### 2. Security Groups
 - ALB Security Group: Allows HTTP (80) from the internet
@@ -61,10 +62,10 @@ The architecture ensures that the application remains available even if individu
 
 ### 3. Launch Template
 - Amazon Linux 2 / Amazon Linux 2023
-- Installed and configured NGINX using user data script
+- I installed and configured NGINX using the user data script
 
 ### 4. Target Group
-- Configured health checks on HTTP ("/")
+- I configured health checks on HTTP ("/")
 
 ### 5. Application Load Balancer
 - Internet-facing ALB
@@ -83,11 +84,11 @@ The architecture ensures that the application remains available even if individu
 
 ---
 
-## 🧪 Fault Tolerance Test
+## Fault Tolerance Test
 
 To validate self-healing behavior:
 
-- One EC2 instance was manually terminated
+- I manually terminated one EC2 instance 
 - Auto Scaling Group detected reduced capacity
 - A new instance was automatically launched
 - The replacement instance passed health checks
@@ -95,7 +96,7 @@ To validate self-healing behavior:
 
 ---
 
-## 📊 Key Outcomes
+## Key Outcomes
 
 - Highly available architecture across multiple Availability Zones
 - Automatic recovery from instance failure (self-healing)
@@ -105,36 +106,13 @@ To validate self-healing behavior:
 
 ---
 
-## 🖼️ Screenshots
-
-Add the following to your repo:
-
-- Architecture diagram
-- VPC setup
-- Auto Scaling Group configuration
-- Target Group health status
-- Application Load Balancer DNS working page
-- Instance replacement test
-
----
-
-## 🧠 Key Learnings
+## What I Learned
 
 - How ALB distributes traffic across healthy instances
 - How Auto Scaling Groups maintain desired capacity
 - How health checks ensure system reliability
 - How multi-AZ architecture improves fault tolerance
 - How cloud infrastructure self-heals automatically
-
----
-
-## 🚀 Future Improvements
-
-- Add private subnets + NAT Gateway
-- Implement HTTPS using AWS Certificate Manager (ACM)
-- Connect custom domain using Route 53
-- Infrastructure as Code using Terraform
-- CI/CD pipeline for automated deployments
 
 ---
 
