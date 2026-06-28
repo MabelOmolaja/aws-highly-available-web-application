@@ -1,7 +1,6 @@
 # Highly Available Web Application on AWS
 
 ## Project Overview
-<img width="1280" height="800" alt="webapp" src="https://github.com/user-attachments/assets/11d1a830-f972-43fd-b730-5edfd0ba6506" />
 
 This project demonstrates the deployment of a **highly available and scalable web application on AWS** using core cloud services such as EC2, Auto Scaling Groups, and an Application Load Balancer (ALB).
 
