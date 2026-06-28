@@ -10,8 +10,6 @@ The architecture ensures that the application remains available even if individu
 
 ## Architecture Overview
 
-<img width="853" height="744" alt="image" src="https://github.com/user-attachments/assets/5c85bf7e-4f4f-4726-b8f2-25e2103fd913" />
-
 - 1 VPC (10.0.0.0/16)
 - 2 Public Subnets across 2 Availability Zones
 - Internet-facing Application Load Balancer (ALB)
