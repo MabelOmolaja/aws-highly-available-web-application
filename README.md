@@ -1,4 +1,4 @@
-# Highly Available Web Application on AWS
+# Designing a Highly Available Web Application Architecture on AWS
 
 ## Project Overview
 
